@@ -1,0 +1,17 @@
+.venv/
+backend/venv/
+icu-api/venv/
+frontend/node_modules/
+icu-ui/node_modules/
+frontend/.next/
+__pycache__/
+*.pyc
+
+# Large training/model artifacts
+*.npy
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.csv
+vital/outputs/

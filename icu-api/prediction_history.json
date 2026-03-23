@@ -1,0 +1,505 @@
+[
+  {
+    "patient_id": "4022",
+    "prediction": 1,
+    "risk_category": "High",
+    "risk_score": 0.9988,
+    "confidence": 0.9988,
+    "xgb_score": 0.9989,
+    "gru_score": 0.9987,
+    "fusion_score": 0.9988,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "Fusion (XGB 0.60 + GRU 0.40)",
+    "model_mode": "Fusion",
+    "source": "training_data_demo_exact_24h",
+    "created_at": "2026-03-23T21:34:28",
+    "hour_from_admission": 23.0,
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (1.00). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    },
+    "note": "Exact 24h sequence from dataset was used.",
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "600",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0069,
+    "confidence": 0.0069,
+    "xgb_score": 0.0069,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "source": "manual_form",
+    "created_at": "2026-03-23T20:34:10",
+    "hour_from_admission": 24.0,
+    "clinical_message": {
+      "headline": "Low immediate risk",
+      "summary": "Predicted deterioration risk is currently low (0.01). Continue standard monitoring and reassess if the condition changes.",
+      "actions": [
+        "Continue routine observation.",
+        "Repeat assessment if symptoms or vitals worsen.",
+        "Document current status and trend."
+      ]
+    },
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "6",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0065,
+    "confidence": 0.0065,
+    "xgb_score": 0.0065,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "source": "manual_form",
+    "created_at": "2026-03-23T20:33:46",
+    "hour_from_admission": 24.0,
+    "clinical_message": {
+      "headline": "Low immediate risk",
+      "summary": "Predicted deterioration risk is currently low (0.01). Continue standard monitoring and reassess if the condition changes.",
+      "actions": [
+        "Continue routine observation.",
+        "Repeat assessment if symptoms or vitals worsen.",
+        "Document current status and trend."
+      ]
+    },
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "4021",
+    "prediction": 1,
+    "risk_category": "High",
+    "risk_score": 0.8553,
+    "confidence": 0.8553,
+    "xgb_score": 0.8553,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "source": "manual_form",
+    "created_at": "2026-03-23T20:20:48",
+    "hour_from_admission": 24.0,
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (0.86). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    },
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "4021",
+    "prediction": 1,
+    "risk_category": "High",
+    "risk_score": 0.911,
+    "confidence": 0.911,
+    "xgb_score": 0.911,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "source": "manual_form",
+    "created_at": "2026-03-23T20:20:20",
+    "hour_from_admission": 24.0,
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (0.91). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    },
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "4022",
+    "prediction": 1,
+    "risk_category": "High",
+    "risk_score": 0.911,
+    "confidence": 0.911,
+    "xgb_score": 0.911,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "source": "manual_form",
+    "created_at": "2026-03-23T20:19:42",
+    "hour_from_admission": 24.0,
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (0.91). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    },
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "9552",
+    "prediction": 1,
+    "risk_category": "High",
+    "risk_score": 0.999,
+    "confidence": 0.999,
+    "xgb_score": 0.999,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only",
+    "source": "training_data_demo",
+    "created_at": "2026-03-23T20:18:59",
+    "hour_from_admission": 15.0,
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (1.00). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    },
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "1",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0065,
+    "confidence": 0.0065,
+    "xgb_score": 0.0065,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "xgb_only_live",
+    "source": "manual_form",
+    "created_at": "2026-03-23T19:55:05",
+    "hour_from_admission": 24.0,
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "680",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0065,
+    "confidence": 0.0065,
+    "xgb_score": 0.0065,
+    "gru_score": null,
+    "fusion_score": null,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "xgb_only_live",
+    "source": "manual_form",
+    "created_at": "2026-03-23T19:48:13",
+    "hour_from_admission": 24.0,
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2,
+      "fusion_alpha_xgb": 0.6,
+      "fusion_alpha_gru": 0.4
+    }
+  },
+  {
+    "patient_id": "ICU-2405",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0163,
+    "confidence": 0.0163,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:43:18",
+    "hour_from_admission": 24.0,
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2
+    }
+  },
+  {
+    "patient_id": "ICU-2405",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0163,
+    "confidence": 0.0163,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:41:50",
+    "hour_from_admission": 24.0,
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2
+    }
+  },
+  {
+    "patient_id": "ICU-2408",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0163,
+    "confidence": 0.0163,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:40:47",
+    "hour_from_admission": 24.0,
+    "thresholds": {
+      "high": 0.35,
+      "medium": 0.2
+    }
+  },
+  {
+    "patient_id": "ICU-A",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.003,
+    "confidence": 0.003,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:26:13",
+    "hour_from_admission": 24.0
+  },
+  {
+    "patient_id": "ICU-4",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.003,
+    "confidence": 0.003,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:25:40",
+    "hour_from_admission": 24.0
+  },
+  {
+    "patient_id": "ICU-2408",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.003,
+    "confidence": 0.003,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:23:48",
+    "hour_from_admission": 24.0
+  },
+  {
+    "patient_id": "ICU-2401",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0163,
+    "confidence": 0.0163,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:11:44",
+    "hour_from_admission": 24.0
+  },
+  {
+    "patient_id": "ICU-600",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0163,
+    "confidence": 0.0163,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:10:59",
+    "hour_from_admission": 24.0
+  },
+  {
+    "patient_id": "ICU-735",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0163,
+    "confidence": 0.0163,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T05:09:46",
+    "hour_from_admission": 24.0
+  },
+  {
+    "patient_id": "ICU-2409",
+    "prediction": 0,
+    "risk_category": "Low",
+    "risk_score": 0.0163,
+    "confidence": 0.0163,
+    "top_factors": [
+      "Respiratory Rate",
+      "Blood Pressure",
+      "Lactate",
+      "SpO2",
+      "Creatinine"
+    ],
+    "model_used": "xgb_deterioration_model.joblib",
+    "created_at": "2026-03-16T04:58:06",
+    "hour_from_admission": 24.0
+  }
+]

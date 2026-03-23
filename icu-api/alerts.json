@@ -1,0 +1,138 @@
+[
+  {
+    "alert_id": "1ea5a58e-d2c6-4984-b1eb-3b3e1a7e5cd6",
+    "patient_id": "4022",
+    "risk_category": "High",
+    "risk_score": 0.9988,
+    "confidence": 0.9988,
+    "xgb_score": 0.9989,
+    "gru_score": 0.9987,
+    "fusion_score": 0.9988,
+    "status": "Immediate review required",
+    "created_at": "2026-03-23T21:34:28",
+    "acknowledged": false,
+    "acknowledged_at": null,
+    "reviewed_by": null,
+    "model_used": "Fusion (XGB 0.60 + GRU 0.40)",
+    "model_mode": "Fusion",
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (1.00). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    },
+    "note": "Exact 24h sequence from dataset was used."
+  },
+  {
+    "alert_id": "befb3583-b493-4d5b-a542-fa7858f314fc",
+    "patient_id": "4021",
+    "risk_category": "High",
+    "risk_score": 0.8553,
+    "confidence": 0.8553,
+    "xgb_score": 0.8553,
+    "gru_score": null,
+    "fusion_score": null,
+    "status": "Immediate review required",
+    "created_at": "2026-03-23T20:20:48",
+    "acknowledged": false,
+    "acknowledged_at": null,
+    "reviewed_by": null,
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (0.86). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    }
+  },
+  {
+    "alert_id": "ce8a10e0-f3bb-4b75-b931-cfe8e208f0f9",
+    "patient_id": "4021",
+    "risk_category": "High",
+    "risk_score": 0.911,
+    "confidence": 0.911,
+    "xgb_score": 0.911,
+    "gru_score": null,
+    "fusion_score": null,
+    "status": "Immediate review required",
+    "created_at": "2026-03-23T20:20:20",
+    "acknowledged": false,
+    "acknowledged_at": null,
+    "reviewed_by": null,
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (0.91). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    }
+  },
+  {
+    "alert_id": "e9a829b3-9fa9-47e6-a235-faf106959422",
+    "patient_id": "4022",
+    "risk_category": "High",
+    "risk_score": 0.911,
+    "confidence": 0.911,
+    "xgb_score": 0.911,
+    "gru_score": null,
+    "fusion_score": null,
+    "status": "Immediate review required",
+    "created_at": "2026-03-23T20:19:42",
+    "acknowledged": false,
+    "acknowledged_at": null,
+    "reviewed_by": null,
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only (live manual form)",
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (0.91). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    }
+  },
+  {
+    "alert_id": "2a3afdc1-bdfa-4deb-a24c-651fdc72e54e",
+    "patient_id": "9552",
+    "risk_category": "High",
+    "risk_score": 0.999,
+    "confidence": 0.999,
+    "xgb_score": 0.999,
+    "gru_score": null,
+    "fusion_score": null,
+    "status": "Immediate review required",
+    "created_at": "2026-03-23T20:18:59",
+    "acknowledged": false,
+    "acknowledged_at": null,
+    "reviewed_by": null,
+    "model_used": "xgb_deterioration_model.joblib",
+    "model_mode": "XGBoost only",
+    "clinical_message": {
+      "headline": "Immediate clinical review recommended",
+      "summary": "Predicted deterioration risk is high (1.00). Escalate bedside assessment and review within the next 12 hours.",
+      "actions": [
+        "Review airway, breathing, and circulation immediately.",
+        "Repeat full vital signs and confirm SpO2 trend.",
+        "Review lactate, creatinine, and blood pressure urgently.",
+        "Notify the responsible ICU physician if clinically indicated."
+      ]
+    }
+  }
+]
